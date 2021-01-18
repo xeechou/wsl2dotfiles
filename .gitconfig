@@ -1,4 +1,10 @@
 [alias]
+	ck = checkout
+	br = branch
+	cf = config
+	fc = fetch
 	st = status
 	co = checkout
-	br = branch
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	mylog = log --pretty=format:'%h %s [%an]' --graph
