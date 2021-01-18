@@ -7,6 +7,9 @@
 
 export PATH=$HOME/.bin:$PATH
 export XDG_CONFIG_HOME=$HOME/.config
+export ALTERNATE_EDITOR=""
+export EDITOR='emacsclient -t'
+alias emac='emacsclient -t'
 alias ls='ls --color=auto'
 alias ll='ls -l'
 alias rm='rm -i'

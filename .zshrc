@@ -44,4 +44,5 @@ alias pmutt='proxychains mutt 2> /dev/null'
 ####for emacs
 alias emacx='emacsclient -nc'
 alias emac='emacsclient -t'
+export ALTERNATE_EDITOR=""
 export EDITOR='emacsclient -t'
