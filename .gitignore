@@ -1,0 +1,132 @@
+# non-dot files
+/[^.]*
+
+# no sensitive data
+.mutt/account
+.mutt/alias
+.mutt/*
+/.bin/hujianbo*
+/.config/shadowsocks
+/.davfs2/*
+#vim savings
+*~
+.ssh/*
+.bin/*
+
+### emacs repo
+**/.emacs.d
+
+### termite config
+.config/termite/config
+
+### weston config
+/.config/weston.ini
+
+### cache
+/.cache/
+/.local/
+/.viminfo
+.vifm/vifminfo
+/.wallpaper
+/.bash_history
+/.bash_logout
+/.bash_profile
+/.zsh_history
+/.python_history
+/.pulse-cookie
+/.dbus/
+/.clangd/
+.lesshst
+.aria2/dht.dat
+.sudo_as_admin_successful
+
+### X.org files
+.Xauthority
+.Xdefaults
+
+#auto generated software junks
+/.mozilla/
+.nv/*
+.AMD/*
+.android/*
+.xdg_menu_cache/*
+.babel.json
+.pki/*
+.zcompdump
+.fehbg
+.dmenu_cache
+.esd_auth
+.gnupg/
+.gradle
+.ionic/
+.ipython/
+.mono/
+.pipewire-media-session/
+.zoom/
+.gdb_history
+.rustup/*
+.wget-hsts
+.landscape
+.motd_shown
+.profile
+
+## node files
+**/.node_modules/*
+.node-gyp/*
+.npm/*
+.yarnrc
+
+## rust stuff
+.cargo/*
+
+## ruby stuff
+/.gem/*
+/.bundle/*
+## steam stuff
+.steam/*
+.steampath
+.steampid
+.var/
+.ssr
+## gcc cache
+.ccache
+## htop
+.config/htop/*
+## cmake
+**/.cmake/*
+
+# auto generated config
+.gnome
+.config/J.Celaya
+.config/browsh
+.config/dconf
+.config/eog
+.config/fontforge
+.config/darktable
+.config/inkscape
+.config/QtProject.conf
+.config/QtProject
+.config/unity3d
+.config/mpv/watch_layer
+.config/gconf/*
+.config/blender/*
+.config/pcmanfm/*
+.config/libfm/*
+.config/mimeapps.list
+.config/ibus/*
+.config/pulse/*
+.config/chromium/*
+.config/configstore/*
+.config/mc/*
+.config/VCG/*
+.config/autostart/
+.config/godot/*
+.config/d-feet/*
+.config/gtk-2.0/*
+.config/zoomus.conf
+.config/Epic/*
+.config/Unreal\ Engine/*
+.config/deadbeef
+.config/expressvpn
+.config/pipewire-media-session
+.config/clash
