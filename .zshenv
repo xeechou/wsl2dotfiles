@@ -12,6 +12,9 @@ if ! [[ $PATH =~ "${PATH_DEV}.*" ]] ; then
     export PATH=$PATH_DEV:$PATH
 fi
 
+export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
+export XDG_RUNTIME_DIR=${HOME}/.xdg_runtime
+
 # setting those variables only if xwindow is not using
 if [ -z ${DISPLAY} ] ; then
 
