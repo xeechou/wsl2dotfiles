@@ -14,7 +14,7 @@ fi
 
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
 export XDG_RUNTIME_DIR=${HOME}/.xdg_runtime
-
+xrdb ${HOME}/.Xresources
 # setting those variables only if xwindow is not using
 if [ -z ${DISPLAY} ] ; then
 
