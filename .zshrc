@@ -7,7 +7,7 @@ unsetopt appendhistory autocd beep notify
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/developer/.zshrc'
+zstyle :compinstall filename "${HOME}/.zshrc"
 PS1='[%C %B%T%b]%# '
 
 autoload -Uz promptinit compinit select-word-style
@@ -26,6 +26,14 @@ bindkey '^[^?' backward-kill-dir
 select-word-style bash
 # End of lines added by compinstall
 
+# using ssh-find-agent to find ssh-agent and set ssh_auth_sock
+source ${HOME}/.bin/ssh-find-agent.sh
+ssh_find_agent -a
+if [ -z "$SSH_AUTH_SOCK" ]
+then
+    eval $(ssh-agent) > /dev/null
+    ssh-add -l >/dev/null || alias ssh='ssh-add -l >/dev/null || ssh-add && unalias ssh; ssh'
+fi
 
 #alias
 alias ls='ls --color=auto'
