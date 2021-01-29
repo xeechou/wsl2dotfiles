@@ -59,6 +59,7 @@
 .gradle
 .ionic/
 .ipython/
+.jupyter/
 .mono/
 .pipewire-media-session/
 .zoom/
@@ -129,3 +130,4 @@
 .config/expressvpn
 .config/pipewire-media-session
 .config/clash
+.config/wslu
